@@ -11,7 +11,7 @@ export const backendApi = {
 // Manholes - Somajiguda
 backendApi.manholeData = `${backendApi.baseUrl}/database/table/somajiguda_manholes_data?limit=3000`;
 // Robot Operations - Somajiguda
-backendApi.robotData = `${backendApi.baseUrl}/database/table/somajiguda_operations_data?limit=120000`;
+// backendApi.robotData = `${backendApi.baseUrl}/database/table/somajiguda_operations_data?limit=120000`;
 // Ward Co-ordiantes with lat,long's
 backendApi.warddata = `${backendApi.baseUrl}/database/table/ward_coordinates`;
 // Weather of Area wize from area centroid lat,long of all manholes
