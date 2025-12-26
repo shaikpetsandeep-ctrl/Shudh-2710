@@ -61,18 +61,18 @@ const MapboxCore = ({
         if (!wardSource) mapInstance.addSource("ward-polygon-source", { type: "geojson", data: currentWardData });
         else wardSource.setData(currentWardData);
 
-        if (!mapInstance.getLayer("ward-polygon-layer")) {
-          mapInstance.addLayer({
-            id: "ward-polygon-layer", type: "fill", source: "ward-polygon-source",
-            paint: { "fill-color": "#1d4ed8", "fill-opacity": 0.1 }
-          });
-        }
-        if (!mapInstance.getLayer("ward-outline-layer")) {
-          mapInstance.addLayer({
-            id: "ward-outline-layer", type: "line", source: "ward-polygon-source",
-            paint: { "line-color": "#1d4ed8", "line-width": 2 }
-          });
-        }
+        // if (!mapInstance.getLayer("ward-polygon-layer")) {
+        //   mapInstance.addLayer({
+        //     id: "ward-polygon-layer", type: "fill", source: "ward-polygon-source",
+        //     paint: { "fill-color": "#1d4ed8", "fill-opacity": 0.1 }
+        //   });
+        // }
+        // if (!mapInstance.getLayer("ward-outline-layer")) {
+        //   mapInstance.addLayer({
+        //     id: "ward-outline-layer", type: "line", source: "ward-polygon-source",
+        //     paint: { "line-color": "#1d4ed8", "line-width": 2 }
+        //   });
+        // }
       }
     } catch (e) { console.error("Ward Error:", e); }
 
